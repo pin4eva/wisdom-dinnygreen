@@ -1,0 +1,52 @@
+.app-header {
+  .top-nav {
+    font-size: 12px;
+    padding-block: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $primary;
+    .fw-600 {
+      color: $dark-green;
+    }
+    p {
+      margin: 0;
+    }
+    .btn {
+      font-size: inherit;
+    }
+
+    &-left {
+      display: flex;
+      gap: 41px;
+    }
+  }
+
+  .bottom-nav {
+    .logo {
+      img {
+        width: 53px;
+        height: 58px;
+      }
+
+      margin-right: 127px;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav {
+      justify-content: space-between;
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100%;
+
+      &-link {
+        color: white;
+        &.active {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

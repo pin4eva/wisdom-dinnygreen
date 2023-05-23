@@ -1,0 +1,16 @@
+@import "./variables";
+@import "./helpers";
+@import "./header.scss";
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &-home {
+    flex: 1;
+  }
+
+  &-footer {
+  }
+}
