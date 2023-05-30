@@ -3,13 +3,21 @@ import React from "react";
 const SectionALS = () => {
   return (
     <section className="container section2">
-      <div class="cir-cont">
+      <div className="cir-cont">
         <div className="holder">
-          <img src="./images/Mask Group.png" alt="" class="mask-r" />
+          <img src="./images/Mask Group.png" alt="" className="mask-r" />
 
-          <div class="dinny_trans">
-            <img class="dinny-pic" src="./images/dinny7_n.png" alt="dinny" />
-            <img src="./images/Rectangle 12.png" alt="" class="small-trans" />
+          <div className="dinny_trans">
+            <img
+              className="dinny-pic"
+              src="./images/dinny7_n.png"
+              alt="dinny"
+            />
+            <img
+              src="./images/Rectangle 12.png"
+              alt=""
+              className="small-trans"
+            />
           </div>
         </div>
       </div>

@@ -1,7 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useState } from "react";
 
 const Header = () => {
+  // eslint-disable-next-line no-undef
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="app-header">
       <div className="container top-nav d-none d-sm-flex">
@@ -19,16 +22,24 @@ const Header = () => {
         </div>
       </div>
       <div className="bg-dark-green py-1 ">
-        <nav className="container bottom-nav">
+        <nav
+          className={
+            open ? "container bottom-nav expanded" : "container bottom-nav"
+          }
+        >
           <a href="#" className="logo">
             <img src="/logo.svg" alt="" />
           </a>
 
-          <button className="d-md-none  btn-primary">
-            <i class="ri-menu-line"></i>
+          <button className="d-md-none  btn" onClick={() => setOpen(!open)}>
+            {open ? (
+              <i className="ri-close-fill"></i>
+            ) : (
+              <i className="ri-menu-line"></i>
+            )}
           </button>
 
-          <ul className="nav d-none d-md-flex">
+          <ul className={open ? "nav d-flex" : "nav d-md-flex d-none"}>
             <li className="nav-item">
               <a href="#" className="nav-link active">
                 Home
@@ -61,8 +72,8 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a href="#" className="btn btn-primary">
-                Contact
+              <a href="#" className="btn btn-primary btn-prop">
+                Contacts
               </a>
             </li>
           </ul>
