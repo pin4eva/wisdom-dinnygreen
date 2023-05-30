@@ -1,9 +1,10 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
 const Header = () => {
   return (
     <header className="app-header">
-      <div className="container top-nav">
+      <div className="container top-nav d-none d-sm-flex">
         <div className="top-nav-left">
           <p>
             <span className="fw-600">call:</span> +234 9012624162{" "}
@@ -23,9 +24,10 @@ const Header = () => {
             <img src="/logo.svg" alt="" />
           </a>
 
-          <button className="btn d-md-none">
+          <button className="d-md-none  btn-primary">
             <i class="ri-menu-line"></i>
           </button>
+
           <ul className="nav d-none d-md-flex">
             <li className="nav-item">
               <a href="#" className="nav-link active">

@@ -1,6 +1,8 @@
 @import "./variables";
 @import "./helpers";
 @import "./header.scss";
+@import "./section.scss";
+@import "./footer.scss";
 
 .app {
   min-height: 100vh;
@@ -8,9 +10,6 @@
   flex-direction: column;
 
   &-home {
-    flex: 1;
-  }
-
-  &-footer {
+    flex: 2;
   }
 }

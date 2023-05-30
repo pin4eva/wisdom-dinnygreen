@@ -1,0 +1,108 @@
+.app-footer {
+  background-color: #003412;
+  // overflow: hidden;
+  height: 800px;
+  padding-top: 3rem;
+  padding-right: 10px;
+  padding-left: 10px;
+  //   border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2rem;
+  .foot-divs {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    .logotxt {
+      text-align: center;
+
+      .txt {
+        color: white;
+
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13.3333px;
+        line-height: 170.9%;
+      }
+      .logo-big {
+        padding-bottom: 10px;
+      }
+    }
+    .about {
+      color: white;
+      //   border: 2px solid blue;
+      .lastP {
+        color: white;
+        @media screen and (min-width: 768px) {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13.3333px;
+          line-height: 170.9%;
+        }
+      }
+      .lit {
+        list-style-type: none;
+        @media screen and (min-width: 768px) {
+          line-height: 40px;
+        }
+      }
+      .h {
+        @media screen and (min-width: 768px) {
+          padding-bottom: 30px;
+        }
+      }
+
+      .email-search {
+        display: flex;
+        margin-bottom: 9px;
+        // justify-content: center;
+        .email {
+          width: 12rem;
+          padding: 15px;
+          border-radius: 5px 0 0 5px;
+          margin-top: 10px;
+          background-color: white;
+          color: gray;
+        }
+        .search {
+          width: 3rem;
+          padding: 15px;
+          border-radius: 0 5px 5px 0;
+          margin-top: 10px;
+          background: #038c33;
+        }
+      }
+    }
+  }
+  .div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .line {
+      border-top: 2px solid white;
+      width: 50%;
+    }
+    .p {
+      // border-top: 2px solid white;
+      padding: 5px 0;
+      // width: 60%;
+      text-align: center;
+      // margin-bottom: 5px;
+      .lastP {
+        color: white;
+        @media screen and (min-width: 768px) {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13.3333px;
+          line-height: 170.9%;
+        }
+      }
+    }
+  }
+}
