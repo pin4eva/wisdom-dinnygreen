@@ -60,151 +60,149 @@
       margin-top: 76px;
     }
   }
+}
+/* -----------section2: Advance Learning System -------------*/
+.section2 {
+  color: $primary;
+  // border: 2px solid green;
+  width: 100%;
 
-  /* -----------section2: Advance Learning System -------------*/
-  .section2 {
-    color: $primary;
-    // border: 2px solid green;
-    width: 100%;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    height: 706px;
+    padding-block-end: 68px;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    //   gap: 4vw;
+  }
 
+  .cir-cont {
+    //   border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    width: 70%;
     @media screen and (min-width: 768px) {
+      width: 100%;
+      height: 381px;
       display: flex;
-      flex-direction: row;
-      height: 706px;
-      padding-block-end: 68px;
-      gap: 1rem;
       align-items: center;
       justify-content: center;
-      //   gap: 4vw;
     }
-
-    .cir-cont {
-      //   border: 2px solid red;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 40px 0;
-      width: 70%;
+    .holder {
+      max-width: 80%;
+      width: 100%;
+      position: relative;
+      // border: 2px solid black;
       @media screen and (min-width: 768px) {
-        width: 100%;
-        height: 381px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .holder {
-        max-width: 80%;
+        max-width: 370px;
         width: 100%;
         position: relative;
-        // border: 2px solid black;
+        //   border: 2px solid black;
+      }
+      .mask-r {
+        position: absolute;
+        top: -1%;
+        right: -16%;
+        width: 100%;
+        max-width: 50%;
+        height: auto;
         @media screen and (min-width: 768px) {
-          max-width: 370px;
-          width: 100%;
-          position: relative;
-          //   border: 2px solid black;
-        }
-        .mask-r {
-          position: absolute;
           top: -1%;
-          right: -16%;
+          right: -7%;
           width: 100%;
-          max-width: 50%;
+          max-width: 140px;
+          height: auto;
+        }
+      }
+
+      .dinny_trans {
+        position: relative;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+          width: 368px;
+        }
+        .dinny-pic {
+          border-radius: 50%;
+          width: 100%;
+          max-width: 250px;
           height: auto;
           @media screen and (min-width: 768px) {
-            top: -1%;
-            right: -7%;
-            width: 100%;
-            max-width: 140px;
-            height: auto;
+            max-width: 300px;
           }
         }
-
-        .dinny_trans {
-          position: relative;
-          text-align: center;
+        .small-trans {
+          position: absolute;
+          top: 55%;
+          right: -9%;
+          width: 100%;
+          max-width: 40%;
+          height: auto;
           @media screen and (min-width: 768px) {
-            width: 368px;
-          }
-          .dinny-pic {
-            border-radius: 50%;
-            width: 100%;
-            max-width: 250px;
-            height: auto;
-            @media screen and (min-width: 768px) {
-              max-width: 300px;
-            }
-          }
-          .small-trans {
-            position: absolute;
             top: 55%;
-            right: -9%;
+            right: 1%;
             width: 100%;
-            max-width: 40%;
+            max-width: 120px;
             height: auto;
-            @media screen and (min-width: 768px) {
-              top: 55%;
-              right: 1%;
-              width: 100%;
-              max-width: 120px;
-              height: auto;
-            }
           }
         }
-      }
-    }
-
-    .txt {
-      //   border: 2px solid black;
-      width: 100%;
-      //   border: 2px solid red;
-      margin-block-end: 40px;
-
-      @media screen and (min-width: 768px) and (max-width: 900px) {
-        & {
-          width: 420px;
-        }
-        .h1-m {
-          //   border: 2px solid red;
-          font-size: 30px;
-        }
-        p {
-          //   border: 2px solid orange;
-          font-size: 15px;
-        }
-        & > .h1-m {
-          width: 380px;
-        }
-        & > p {
-          width: 370px;
-        }
-      }
-      .amt-detail {
-        @media screen and (min-width: 768px) {
-          margin-block-end: 40px;
-          display: flex;
-        }
-        .amt {
-          @media screen and (min-width: 768px) {
-            & > p {
-              // border: 2px solid red;
-              margin-bottom: 0px;
-            }
-            &:not(:last-child) {
-              padding-right: 27px;
-              border-right: 2px solid rgba(146, 144, 144, 0.459);
-            }
-            &:not(:first-child) {
-              padding-left: 27px;
-            }
-          }
-        }
-      }
-      .ALS-btn {
-        text-align: center;
       }
     }
   }
-  /* ---------end of Section2 ------------- */
+
+  .txt {
+    //   border: 2px solid black;
+    width: 100%;
+    //   border: 2px solid red;
+    margin-block-end: 40px;
+
+    @media screen and (min-width: 768px) and (max-width: 900px) {
+      & {
+        width: 420px;
+      }
+      .h1-m {
+        //   border: 2px solid red;
+        font-size: 30px;
+      }
+      p {
+        //   border: 2px solid orange;
+        font-size: 15px;
+      }
+      & > .h1-m {
+        width: 380px;
+      }
+      & > p {
+        width: 370px;
+      }
+    }
+    .amt-detail {
+      @media screen and (min-width: 768px) {
+        margin-block-end: 40px;
+        display: flex;
+      }
+      .amt {
+        @media screen and (min-width: 768px) {
+          & > p {
+            // border: 2px solid red;
+            margin-bottom: 0px;
+          }
+          &:not(:last-child) {
+            padding-right: 27px;
+            border-right: 2px solid rgba(146, 144, 144, 0.459);
+          }
+          &:not(:first-child) {
+            padding-left: 27px;
+          }
+        }
+      }
+    }
+    .ALS-btn {
+      text-align: center;
+    }
+  }
 }
 
 /* ----------section3: Our Feature ------------- */
@@ -509,8 +507,8 @@
         display: none;
         // background-color: red;
         position: absolute;
-        top: 45%;
-        right: 38%;
+        top: 49%;
+        right: 36%;
       }
     }
   }
@@ -523,8 +521,6 @@
     } */
   }
 }
-
-/* Media queries */
 
 /* ------------ END ------------------- */
 

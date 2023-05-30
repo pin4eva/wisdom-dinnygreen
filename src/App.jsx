@@ -4,7 +4,8 @@ import "./styles/styles.scss";
 import "remixicon/fonts/remixicon.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Section from "./components/Section";
+import Section from "./components/sections/Section";
+import SectionALS from "./components/sections/SectionALS";
 import SectionOF from "./components/sections/SectionOF";
 import SectionFOM from "./components/sections/SectionFOM";
 import SectionPOP from "./components/sections/SectionPOP";
@@ -20,6 +21,7 @@ const App = () => {
 
       <div className="app-home">
         <Section />
+        <SectionALS />
         <SectionOF />
         <SectionFOM />
         <SectionPOP />
